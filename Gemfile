@@ -7,6 +7,8 @@ gem 'rails', '4.2.4'
 gem 'devise', '~> 4.2'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem "gritter", "1.2.0"
+gem "administrate", "~> 0.2.2"
+gem 'bourbon'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
