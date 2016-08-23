@@ -75,7 +75,7 @@ describe 'navigate' do
     before do
       @edit_user = User.create(first_name: "test", last_name: "testing", email: "test@example.com", password: "abcabcabc", password_confirmation: "abcabcabc")
       login_as(@edit_user, :scope => :user)
-      @edit_post = Post.create(date: Date.today, rationale: "some more stuff", user_id: @edit.user.id)
+      @edit_post = Post.create(date: Date.today, rationale: "some more stuff", user_id: @edit_user.id)
     end
 
     it 'can be edited' do
