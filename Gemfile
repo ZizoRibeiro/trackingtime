@@ -10,6 +10,7 @@ gem "gritter", "1.2.0"
 gem "administrate", "~> 0.2.2"
 gem 'bourbon'
 gem 'pundit', '~> 1.1'
+gem 'puma', '~> 3.6'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
