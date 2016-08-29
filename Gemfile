@@ -49,6 +49,9 @@ group :development, :test do
   gem 'factory_girl_rails', '~> 4.7'
 end
 
+gem 'dotenv-rails', :groups => [:development, :test]
+
+
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
