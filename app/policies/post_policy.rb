@@ -5,6 +5,10 @@ class PostPolicy < ApplicationPolicy
     return true if (record.user_id == user.id || admin_types.include?(user.type)) && !record.approved?
   end
 
+  def approve?
+    admin?
+  end
+
   private
 
     def user_or_admin
