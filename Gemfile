@@ -13,6 +13,7 @@ gem 'pundit', '~> 1.1'
 gem 'puma', '~> 3.6'
 gem 'twilio-ruby', '~> 4.11', '>= 4.11.1'
 gem 'kaminari', '~> 0.17.0'
+gem 'rails_12factor'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
