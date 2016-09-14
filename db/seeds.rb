@@ -1,4 +1,4 @@
-@user = User.create(email: "john@example.com",
+@employee = Employee.create(email: "john@example.com",
                     password: "abcabcabc",
                     password_confirmation: "abcabcabc",
                     first_name: "John",
@@ -16,9 +16,9 @@ AdminUser.create(email: "zizo@example.com",
 
 puts "1 Admin User Created"
 
-AuditLog.create!(user_id: @user.id, status: 0, start_date: (Date.today - 6.days))
-AuditLog.create!(user_id: @user.id, status: 0, start_date: (Date.today - 13.days))
-AuditLog.create!(user_id: @user.id, status: 0, start_date: (Date.today - 20.days))
+AuditLog.create!(user_id: @employee.id, status: 0, start_date: (Date.today - 6.days))
+AuditLog.create!(user_id: @employee.id, status: 0, start_date: (Date.today - 13.days))
+AuditLog.create!(user_id: @employee.id, status: 0, start_date: (Date.today - 20.days))
 
 puts "3 audit logs have been created"
 
@@ -28,7 +28,7 @@ puts "3 audit logs have been created"
   Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
   Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-  user_id: @user.id, tracking_hours: 2.5)
+  user_id: @employee.id, tracking_hours: 2.5)
 end
 
 puts "100 posts have been created"
