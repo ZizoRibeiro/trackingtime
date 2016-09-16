@@ -2,18 +2,19 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.4'
+gem 'rails', '~> 5.0', '>= 5.0.0.1'
 
 gem 'devise', '~> 4.2'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem "gritter", "1.2.0"
-gem "administrate", "~> 0.2.2"
+gem "administrate", github: 'greetpoint/administrate', branch: 'rails5'
 gem 'bourbon'
 gem 'pundit', '~> 1.1'
 gem 'puma', '~> 3.6'
 gem 'twilio-ruby', '~> 4.11', '>= 4.11.1'
 gem 'kaminari', '~> 0.17.0'
 gem 'rails_12factor'
+gem 'newrelic_rpm', '~> 3.15', '>= 3.15.0.314'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
