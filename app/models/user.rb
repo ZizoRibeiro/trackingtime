@@ -9,12 +9,14 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
-  validates_presence_of :first_name, :last_name, :phone
+  validates_presence_of :first_name, :last_name, :phone, :ssn, :company
 
   PHONE_REGEX = /\A[0-9]*\Z/
 
   validates_format_of :phone, with: PHONE_REGEX
   validates :phone, length: {is: 10}
+  validates :ssn, length: {is: 4}
+  validates_numericality_of :ssn
 
   scope :employees, -> { where(type: nil) }
 
